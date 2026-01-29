@@ -97,6 +97,12 @@
     <!-- Put Chat Widget 1 Line Below -->
     <script type="text/javascript">
   (function(w, d, x, id){
+    amazon_connect('contactAttributes', {
+      customerId: '12345',                // your variable
+      pageContext: 'product-detail-page',
+      loyaltyTier: 'gold',
+      cartValue: '89.50'
+    });
     s=d.createElement('script');
     s.src='https://student21mwjan26.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
     s.async=1;
